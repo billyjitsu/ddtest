@@ -29,7 +29,7 @@ const { chains, provider } = configureChains(
   [chain.polygonMumbai],
   [
    // jsonRpcProvider({ rpc: () => ({ http: 'https://rpc.ankr.com/eth' }) }),
-   // alchemyProvider({ apiKey: process.env.ALCHEMY_ID }),
+   // alchemyProvider({ apiKey: your API Here }),
     publicProvider()
     ]
 );
