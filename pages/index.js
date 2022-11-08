@@ -14,7 +14,7 @@ import extContract from "../contracts/rawABI.json"; // Raw ABI import (pulled fr
 export default function Home() {
   const CONTRACT_ADDRESS = "0x0556b26dEf59b23735f3170918225845da831C14";
 
-  const [supplyData, setSupplyData] = useState("0");
+  const [supplyData, setSupplyData] = useState(0);
 
 
   const contractConfig = {
@@ -102,7 +102,7 @@ export default function Home() {
   useEffect(() => {
     if (totalSupplyData) {
       let temp = totalSupplyData;
-      setSupplyData(temp.toString());
+      setSupplyData(temp);
     }
   }, [totalSupplyData]);
 
@@ -141,7 +141,7 @@ export default function Home() {
         <div className="text-center mt-5">
           <h3 className="text-lg ">Total minted</h3>
 
-          <h3 className="text-lg">{supplyData}</h3>
+          <h3 className="text-lg">{supplyData.toString()}</h3>
         </div>
       </div>
     </div>
