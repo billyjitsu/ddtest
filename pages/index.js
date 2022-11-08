@@ -107,12 +107,12 @@ export default function Home() {
   }, [totalSupplyData]);
 
   /* console.log data to view variables */
-  useEffect(() => {
-    console.log("mintData:", mintAdminData);
-    console.log("isMintLoading:", isMintLoading);
-    console.log("totalSupplyData:", totalSupplyData.toString());
-    console.log("___________");
-  }, [mintAdminData, isMintLoading, totalSupplyData]);
+  // useEffect(() => {
+  //   console.log("mintData:", mintAdminData);
+  //   console.log("isMintLoading:", isMintLoading);
+  //   console.log("totalSupplyData:", totalSupplyData.toString());
+  //   console.log("___________");
+  // }, [mintAdminData, isMintLoading, totalSupplyData]);
 
   return (
     <div className="container flex flex-col  items-center mt-10">
