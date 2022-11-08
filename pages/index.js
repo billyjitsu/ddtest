@@ -12,7 +12,7 @@ import tokenContract from "../contracts/contract.json";  // Full artifact import
 import extContract from "../contracts/rawABI.json"; // Raw ABI import (pulled from etherscan)
 
 export default function Home() {
-  const CONTRACT_ADDRESS = "0x99f8fCe2D5d3BDE2376ccca9f488C7DF8355c780";
+  const CONTRACT_ADDRESS = "0x0556b26dEf59b23735f3170918225845da831C14";
 
   const [supplyData, setSupplyData] = useState("0");
 
@@ -98,7 +98,7 @@ export default function Home() {
   });
   /* *************************************************************************** */
 
-  
+
   useEffect(() => {
     if (totalSupplyData) {
       let temp = totalSupplyData;
